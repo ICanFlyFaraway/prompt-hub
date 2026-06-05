@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>window.__LOCALE__ = 'zh'; window.__BASE__ = '../';</script>
+</head>
+<body class="legal-page">
+  <nav class="legal-page-nav">
+    <a class="logo" href="./"><span data-i18n="siteName">Prompt</span><span class="logo-muted" data-i18n="siteTagline">Hub</span></a>
+    <div class="nav-right">
+      <a href="./" class="legal-back-link"><i class="ti ti-arrow-left" aria-hidden="true"></i> <span data-i18n="legal.back">返回首页</span></a>
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Theme">
+        <i class="ti ti-sun" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="icon-btn lang-btn" id="lang-switch" data-i18n="lang.switch">English</button>
+    </div>
+  </nav>
+
+  <nav class="legal-subnav" aria-label="Legal">
+    <a href="?p=about" data-legal-nav="about" data-i18n="footer.about">关于</a>
+    <a href="?p=terms" data-legal-nav="terms" data-i18n="footer.terms">使用条款</a>
+    <a href="?p=privacy" data-legal-nav="privacy" data-i18n="footer.privacy">隐私说明</a>
+    <a href="?p=contact" data-legal-nav="contact" data-i18n="footer.contact">联系我们</a>
+  </nav>
+
+  <main class="legal-page-main">
+    <h1 id="legal-page-title"></h1>
+    <p id="legal-page-updated" class="legal-updated"></p>
+    <div id="legal-page-body" class="legal-body"></div>
+  </main>
+
+  <footer class="legal-page-footer">
+    <div style="font-size:12px;color:var(--muted)" data-i18n="footer.copyright"></div>
+  </footer>
+
+  <script type="module" src="../assets/js/legal-page-init.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptHub</title>
+  <script>
+    (function () {
+      var stored = localStorage.getItem('ph-locale');
+      var lang = (navigator.language || '').toLowerCase();
+      var locale = stored || (lang.indexOf('zh') === 0 ? 'zh' : 'en');
+      if (['zh', 'en'].indexOf(locale) < 0) locale = 'zh';
+      window.location.replace(locale + '/');
+    })();
+  </script>
+</head>
+<body>
+  <p style="font-family:sans-serif;padding:2rem;color:#666">Redirecting…</p>
+</body>
+</html>

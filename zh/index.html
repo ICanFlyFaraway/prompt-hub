@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptHub — AI 提示词导航</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>window.__LOCALE__ = 'zh'; window.__BASE__ = '../';</script>
+</head>
+<body>
+  <nav>
+    <a class="logo" href="./"><span data-i18n="siteName">Prompt</span><span class="logo-muted" data-i18n="siteTagline">Hub</span></a>
+    <ul class="nav-links">
+      <li><a href="#prompt-grid" class="active" data-nav="all" data-i18n="nav.library">提示词库</a></li>
+      <li><a href="#tools-strip" data-nav="tools" data-i18n="nav.tools">AI 工具</a></li>
+      <li><a href="#prompt-grid" data-nav="featured" data-i18n="nav.collections">精选合集</a></li>
+      <li><a href="#crosslink" data-nav="guide" data-i18n="nav.guide">使用指南</a></li>
+    </ul>
+    <div class="nav-right">
+      <button type="button" class="icon-btn" id="theme-toggle" aria-label="Theme">
+        <i class="ti ti-sun" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="icon-btn lang-btn" id="lang-switch" data-i18n="lang.switch">English</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-badge"><i class="ti ti-sparkles" aria-hidden="true"></i> <span data-i18n="hero.badge"></span></div>
+    <h1><span data-i18n="hero.titleLine1"></span><br><span class="g" data-i18n="hero.titleHighlight"></span></h1>
+    <p data-i18n="hero.subtitle"></p>
+    <div class="search-wrap">
+      <input type="search" id="search-input" data-i18n="hero.searchPlaceholder" data-i18n-attr="placeholder" autocomplete="off" />
+      <i class="ti ti-search si" aria-hidden="true"></i>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n" id="stat-prompts">0</div><div class="stat-l" data-i18n="stats.prompts"></div></div>
+      <div class="stat"><div class="stat-n" id="stat-tools">0</div><div class="stat-l" data-i18n="stats.tools"></div></div>
+      <div class="stat"><div class="stat-n" id="stat-categories">0</div><div class="stat-l" data-i18n="stats.categories"></div></div>
+      <div class="stat"><div class="stat-n" id="stat-contributors">0</div><div class="stat-l" data-i18n="stats.contributors"></div></div>
+    </div>
+  </section>
+
+  <div id="load-progress" class="load-progress hidden" aria-live="polite"></div>
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs"></div>
+  </div>
+  <div class="category-chips-wrap">
+    <button type="button" class="mobile-filter-btn" id="mobile-filter-btn" aria-expanded="false">
+      <i class="ti ti-adjustments-horizontal" aria-hidden="true"></i>
+      <span data-i18n="filters.mobile">筛选</span>
+    </button>
+    <div class="category-chips" id="category-chips"></div>
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <div class="main">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title" data-i18n="sidebar.categories"></div>
+        <div id="category-list"></div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-title" data-i18n="sidebar.tags"></div>
+        <div id="popular-tags" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+      </div>
+      <div class="sidebar-section" id="contributors-section">
+        <div class="sidebar-title" data-i18n="sidebar.contributors"></div>
+        <div id="contributors-list"></div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="tools-strip" id="tools-strip"></div>
+
+      <div class="section-header prompt-section" id="prompt-section">
+        <h2 id="section-title"><span data-i18n="sections.featured"></span></h2>
+      </div>
+      <div id="filter-bar" class="filter-bar hidden"></div>
+      <div class="prompt-grid" id="prompt-grid"></div>
+      <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+
+      <div class="crosslink-section" id="crosslink">
+        <div class="crosslink-title" data-i18n="sections.crosslinkTitle"></div>
+        <div class="crosslink-sub" data-i18n="sections.crosslinkSub"></div>
+        <div class="crosslink-grid" id="crosslink-grid"></div>
+      </div>
+
+      <div class="section-header">
+        <h2><span data-i18n="sections.hot"></span> <i class="ti ti-flame" aria-hidden="true" style="color:var(--coral);font-size:18px"></i></h2>
+      </div>
+      <div class="hot-list" id="hot-list"></div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-logo" data-i18n="siteName">PromptHub</div>
+    <div class="footer-links">
+      <a href="legal?p=about" data-i18n="footer.about"></a>
+      <a href="legal?p=terms" data-i18n="footer.terms"></a>
+      <a href="legal?p=privacy" data-i18n="footer.privacy"></a>
+      <a href="legal?p=contact" data-i18n="footer.contact"></a>
+    </div>
+    <div style="font-size:12px;color:var(--muted)" data-i18n="footer.copyright"></div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-title"></h3>
+          <span id="modal-badge" class="modal-badge" style="display:none"></span>
+          <p id="modal-hint" class="modal-hint" style="display:none"></p>
+        </div>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close"><i class="ti ti-x" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body"><pre class="modal-prompt" id="modal-body"></pre></div>
+      <div class="modal-footer">
+        <button type="button" class="btn-primary" id="modal-copy" data-i18n="modal.copyPrompt"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { initApp } from '../assets/js/app.js';
+    initApp(window.__LOCALE__ || 'zh');
+  </script>
+</body>
+</html>

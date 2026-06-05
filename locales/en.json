@@ -1,0 +1,278 @@
+{
+  "siteName": "Prompt",
+  "siteTagline": "Hub",
+  "nav": {
+    "library": "Prompt Library",
+    "tools": "AI Tools",
+    "collections": "Collections",
+    "guide": "Guide"
+  },
+  "hero": {
+    "badge": "Curated prompts, updated regularly",
+    "titleLine1": "Discover · Use · Master",
+    "titleHighlight": "AI Prompts",
+    "subtitle": "Practical prompts for ChatGPT, Claude, Midjourney, Stable Diffusion, and more—so every creative session starts strong.",
+    "searchPlaceholder": "Search prompts: writing, art, code, marketing…"
+  },
+  "stats": {
+    "prompts": "Curated prompts",
+    "tools": "AI models",
+    "categories": "Use cases",
+    "contributors": "Contributors"
+  },
+  "tabs": {
+    "all": "All",
+    "chatgpt": "ChatGPT",
+    "claude": "Claude",
+    "midjourney": "Midjourney",
+    "sd": "Stable Diffusion",
+    "gemini": "Gemini",
+    "sora": "Sora"
+  },
+  "sidebar": {
+    "categories": "Categories",
+    "allCategories": "All categories",
+    "tags": "Popular tags",
+    "contributors": "Contributors"
+  },
+  "categories": {
+    "all": "All categories",
+    "writing": "Writing",
+    "coding": "Development",
+    "image": "Image & Art",
+    "marketing": "Marketing",
+    "education": "Education",
+    "business": "Business",
+    "roleplay": "Roleplay",
+    "video": "Video scripts"
+  },
+  "sections": {
+    "featured": "Editor's picks",
+    "featuredSub": "Hand-selected today",
+    "viewAll": "View all",
+    "crosslinkTitle": "Matching AI tools",
+    "crosslinkSub": "Jump to the right platform: find a prompt, then create.",
+    "hot": "Trending this week",
+    "hotFull": "Full list"
+  },
+  "tools": {
+    "more": "More tools"
+  },
+  "card": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "favorite": "Save",
+    "view": "View full",
+    "uses": "uses",
+    "detailedBadge": "Detailed"
+  },
+  "modal": {
+    "close": "Close",
+    "copyPrompt": "Copy prompt",
+    "detailed": "Full detailed version",
+    "hint": "Includes role, workflow, constraints, and output format—ready to paste into your AI tool."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "lang": {
+    "switch": "中文"
+  },
+  "footer": {
+    "about": "About",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "copyright": "© 2026 PromptHub · Static frontend navigator"
+  },
+  "empty": "No prompts match your search. Try another keyword or category.",
+  "loading": {
+    "page": "Loading prompts for this page…",
+    "content": "Generating full prompt…",
+    "error": "Failed to load. Please try again.",
+    "background": "Loading library {done}/{total} ({pct}%)"
+  },
+  "filters": {
+    "active": "Active filters",
+    "clearAll": "Clear filters",
+    "searchResults": "Search results",
+    "items": "prompts",
+    "mobile": "Filters"
+  },
+  "pagination": {
+    "label": "Prompt list pagination",
+    "prev": "Previous",
+    "next": "Next",
+    "pageOf": "Page {current} of {total}",
+    "range": "Showing {start}–{end}",
+    "perPage": "Per page",
+    "jump": "Go to",
+    "go": "Go"
+  },
+  "toolDesc": {
+    "chatgpt": "Writing · Q&A · analysis",
+    "claude": "Long-form · code · research",
+    "midjourney": "Commercial · concept · art",
+    "sd": "Photoreal · anime · stylized",
+    "gemini": "Multimodal · Google ecosystem",
+    "sora": "Short video · shot lists",
+    "viewAll": "More AI tools coming soon"
+  },
+  "badges": {
+    "hot": "Hot",
+    "editor": "Editor's pick",
+    "new": "New",
+    "tips": "Technique"
+  },
+  "legal": {
+    "back": "Back to home",
+    "close": "Close",
+    "about": {
+      "title": "About PromptHub",
+      "updated": "Last updated: June 3, 2026",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "body": [
+            "PromptHub is an AI prompt navigator for creators and developers. Browse prompts by scenario, model, and tags, then copy them into ChatGPT, Claude, Midjourney, and other tools.",
+            "The site is a static, frontend-only experience—no sign-up or login required to search, browse, or save favorites."
+          ]
+        },
+        {
+          "heading": "Content & updates",
+          "body": [
+            "Prompts span eight categories (writing, coding, image, marketing, education, business, roleplay, video) with bilingual titles and descriptions. Opening a detail view may generate a structured “detailed” version for paste-ready use.",
+            "We continuously curate and improve the library. Categories, counts, and UI may change without prior notice."
+          ]
+        },
+        {
+          "heading": "How to use the site",
+          "body": [
+            "Treat PromptHub as a learning and reference tool. Before using prompts in client work, commercial releases, or public distribution, verify accuracy, compliance, and IP requirements on your own.",
+            "We do not run AI inference and are not responsible for outputs from third-party AI platforms."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "updated": "Last updated: June 3, 2026",
+      "sections": [
+        {
+          "heading": "1. Acceptance",
+          "body": [
+            "By accessing or using PromptHub (“the Site”), you agree to these Terms of Use. If you do not agree, please stop using the Site."
+          ]
+        },
+        {
+          "heading": "2. Service description",
+          "body": [
+            "The Site provides prompt indexing, search, filtering, copy, and display features on an “as is” basis. Nothing here constitutes professional, legal, medical, or financial advice.",
+            "We may modify, suspend, or discontinue any part of the Site without prior notice."
+          ]
+        },
+        {
+          "heading": "3. Your responsibilities",
+          "body": [
+            "You must use the Site and prompts lawfully and ethically—not for fraud, harassment, rights infringement, malware distribution, or violations of applicable law.",
+            "Content you submit to third-party AI services is your responsibility; comply with each platform’s terms and content policies."
+          ]
+        },
+        {
+          "heading": "4. Intellectual property",
+          "body": [
+            "The Site’s layout, branding, and curation are protected by applicable law. Prompt text may come from community practice and is offered for reference; if you believe content infringes your rights, contact us via the Contact page.",
+            "You may not scrape, mirror, or commercially redistribute bulk Site data without written permission."
+          ]
+        },
+        {
+          "heading": "5. Disclaimer",
+          "body": [
+            "To the fullest extent permitted by law, we disclaim warranties regarding accuracy, completeness, or fitness of prompts, and are not liable for direct or indirect damages arising from use or inability to use the Site.",
+            "You assume all risk when using the Site and external AI services."
+          ]
+        },
+        {
+          "heading": "6. Changes",
+          "body": [
+            "We may update these Terms from time to time. The revised version is effective when published on the Site. Continued use constitutes acceptance."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: June 3, 2026",
+      "sections": [
+        {
+          "heading": "1. Overview",
+          "body": [
+            "We respect your privacy. PromptHub has no user accounts and does not store personal profiles on a Site-operated backend database."
+          ]
+        },
+        {
+          "heading": "2. Local storage (browser)",
+          "body": [
+            "To improve your experience, we may save locale preference, theme, favorites, and pagination settings in your browser’s localStorage. This data stays on your device; we do not upload it to our servers.",
+            "You can clear site data anytime in browser settings; preferences will reset afterward."
+          ]
+        },
+        {
+          "heading": "3. What we do not collect on the Site",
+          "body": [
+            "We do not require your name, phone number, or login credentials. We do not collect payment or government ID through Site forms.",
+            "If you email us, we use your message only to respond and do not sell your email address without consent."
+          ]
+        },
+        {
+          "heading": "4. Third-party services",
+          "body": [
+            "Pages may load third-party assets (e.g. font or icon CDNs). When you follow links to ChatGPT, Claude, or other AI platforms, their privacy policies apply.",
+            "If you self-host the static files, access logs depend on your hosting environment, not the frontend code alone."
+          ]
+        },
+        {
+          "heading": "5. Minors",
+          "body": [
+            "The Site is intended for users who can enter binding agreements under local law. Minors should use the Site with guardian consent and avoid sending sensitive personal data to AI services."
+          ]
+        },
+        {
+          "heading": "6. Updates & contact",
+          "body": [
+            "We may update this policy; the date above will change when we do. Questions or rights requests (where applicable law allows) may be sent to easyainavigator@gmail.com."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "updated": "Last updated: June 3, 2026",
+      "email": "easyainavigator@gmail.com",
+      "emailLabel": "Email",
+      "sections": [
+        {
+          "heading": "Get in touch",
+          "body": [
+            "Thank you for using PromptHub. We welcome feedback on corrections, copyright concerns, partnerships, and feature ideas."
+          ]
+        },
+        {
+          "heading": "Suggested subject lines",
+          "body": [
+            "Please prefix your subject for faster routing, e.g. [Correction], [Copyright], [Partnership], [Feature request].",
+            "Include the prompt ID or a screenshot plus browser and language when reporting issues."
+          ]
+        },
+        {
+          "heading": "Response time",
+          "body": [
+            "We aim to reply within 3–5 business days; holidays or high volume may cause delays.",
+            "We do not offer phone support or live chat on the Site."
+          ]
+        }
+      ]
+    }
+  }
+}
